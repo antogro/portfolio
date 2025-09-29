@@ -1,7 +1,10 @@
 from django.db import models
 
-# Create your models here.
-class Projet (models.Model):
+
+class Project(models.Model):
+    """
+    Model representing a project.
+    """
     title = models.CharField(max_length=200)
     description = models.TextField()
     technologie = models.CharField(max_length=300)

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+  <div class="error-page">
+    <h1>c'est aujourdh'ui l'inc</h1>
+    <p>Le serveur a rencontré un problème. Merci de réessayer plus tard.</p>
+    <a href="{% url 'index' %}">Retour à l'accueil</a>
+  </div>
+{% endblock %}
